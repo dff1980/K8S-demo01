@@ -3,7 +3,7 @@ SuSE CaaSP K8S demo
 
 Полезные команды
 `-w` -- watch
-`-a` -- all
+`-a` -- all \(default hide terminated pods\)
 `kubectl cluster-info`
 `kubectl config`
 `kubectl config view`
@@ -11,7 +11,7 @@ SuSE CaaSP K8S demo
 `kubectl proxy`
 `kubectl get pods -a -o wide --all-namespaces`
 `kubectl get pods -w -a -o wide --all-namespaces`
- `kubectl describe svc weave-scope-app`
+`kubectl describe svc weave-scope-app`
 `kubectl delete pvc -l app=wordpress`
 `kubectl delete service -l app=wordpress`
 `kubectl get pvc`
