@@ -25,7 +25,7 @@ spec:
     requests:
       storage: 20Gi
 ---
-apiVersion: apps/v1alpha1
+apiVersion: extension/v1beta1
 kind: Deployment
 metadata:
   name: wordpress-mysql
