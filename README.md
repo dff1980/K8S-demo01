@@ -4,7 +4,6 @@ SuSE CaaSP K8S demo
 Полезные команды
 
 `-w` -- watch
-
 `-a` -- all \(default hide terminated pods\)
 
 `kubectl cluster-info`
