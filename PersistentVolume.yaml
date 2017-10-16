@@ -11,3 +11,18 @@ spec:
     path: /pv-nfs #The path that is exported by the NFS server.
     server: 192.168.13.1 #The host name or IP address of the NFS server.
   persistentVolumeReclaimPolicy: Recycle #The reclaim policy for the PV. This defines what happens to a volume when released from its claim. Valid options are Retain (default) and Recycle. See Reclaiming Resources.
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: Wordpress-pv 
+spec:
+  capacity:
+    storage: 20Gi 
+  accessModes:
+  - ReadWriteOnce 
+  nfs: 
+    path: /pv-nfs 
+    server: 192.168.13.1 
+  persistentVolumeReclaimPolicy: Recycle
+  
