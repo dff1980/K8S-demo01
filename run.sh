@@ -1,1 +1,1 @@
-kubectl create -f local-volumes.yaml
+kubectl create -f PersistentVolume.yaml
