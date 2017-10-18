@@ -1,7 +1,7 @@
 # K8S-demo01
 SuSE CaaSP K8S demo
 
-https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/
+ [mysql-wordpress persistent volume](https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/)
 
 Полезные команды
 
