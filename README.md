@@ -1,6 +1,8 @@
 # K8S-demo01
 SuSE CaaSP K8S demo
 
+(https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/)
+
 Полезные команды
 
 `-w` -- watch
@@ -46,3 +48,4 @@ SuSE CaaSP K8S demo
 `kubectl get services -a -o wide --all-namespaces`
 
 `kubectl get services -w -o wide --all-namespaces`
+
