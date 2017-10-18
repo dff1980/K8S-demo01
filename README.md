@@ -1,15 +1,13 @@
 # K8S-demo01
 SuSE CaaSP K8S demo
 
-(https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/)
-
-(ddd)
+https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/
 
 Полезные команды
 
 `-w` -- watch
 
-`-a` -- all \(default hide terminated pods\)
+`-a` -- all (default hide terminated pods)
 
 `kubectl cluster-info`
 
