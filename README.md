@@ -3,6 +3,8 @@ SuSE CaaSP K8S demo
 
 (https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/)
 
+(ddd)
+
 Полезные команды
 
 `-w` -- watch
