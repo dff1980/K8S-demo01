@@ -49,6 +49,9 @@ SuSE CaaSP K8S demo
 
 `kubectl get services -w -o wide --all-namespaces`
 
+`kubectl -n kube-system edit service kubernetes-dashboard`
+
+
 `git clone`							Автоматически настраивает вашу локальную ветку master на отслеживание удалённой ветки master на сервере
 
 `git remote [-v]`						Просмотреть, какие удалённые серверы у вас уже настроены.
