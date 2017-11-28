@@ -21,6 +21,7 @@ Remove Kubernates Dashboard
 
 
 Install Wordpress Demo (NFS)
+Порт [mysql-wordpress persistent volume](https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/)
 
 Нужно поправить файл: `persistentvolume.yaml`
 указать в нем правильные шары для NFS
@@ -38,8 +39,6 @@ Remove Wordpress Demo
 delete NFS data
 
 ---
-
- [mysql-wordpress persistent volume](https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/)
 
 Полезные команды
 
