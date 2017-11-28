@@ -7,8 +7,9 @@ Install Kubernates Dashboard
 
 `./kubernetes-dashboard.sh`
 
-Устанавливается Grafana и Kubernetes Dashboard (+ heapster + 
-Консоли будут доступна на любой из нод по порту указанному в 
+Устанавливается Grafana и Kubernetes Dashboard (+heapster +influxdb)
+
+Консоли будут доступна на любой из нод по порту указанному в:
 
 `kubectl -n kube-system get services`
 
@@ -20,6 +21,9 @@ Remove Kubernates Dashboard
 
 
 Install Wordpress Demo (NFS)
+
+Нужно поправить файл: `persistentvolume.yaml`
+указать в нем правильные шары для NFS
 
 `cd wordpress`
 
