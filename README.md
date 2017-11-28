@@ -1,6 +1,36 @@
 # K8S-demo01
 SuSE CaaSP K8S demo
 
+Install Kubernates Dashboard
+
+`cd dashboard`
+
+`./kubernetes-dashboard.sh`
+
+
+Remove Kubernates Dashboard
+
+`cd dashboard`
+
+`./clean_up.sh`
+
+
+Install Wordpress Demo (NFS)
+
+`cd wordpress`
+
+`./wordpress-nfs.sh`
+
+Remove Wordpress Demo
+
+`cd wordpress`
+
+`./clean_up.sh`
+
+delete NFS data
+
+---
+
  [mysql-wordpress persistent volume](https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/)
 
 Полезные команды
