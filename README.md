@@ -7,7 +7,10 @@ Install Kubernates Dashboard
 
 `./kubernetes-dashboard.sh`
 
-Консоль будет доступна на люьой из нод по порту указанному в
+Устанавливается Grafana и Kubernetes Dashboard (+ heapster + 
+Консоли будут доступна на любой из нод по порту указанному в 
+
+`kubectl -n kube-system get services`
 
 Remove Kubernates Dashboard
 
