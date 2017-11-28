@@ -9,7 +9,6 @@
 #https://raw.githubusercontent.com/kubernetes/heapster/master/deploy/kube-config/rbac/heapster-rbac.yaml
 
 kubectl apply -f heapster.yaml
-kubectl apply -f heapster-rbac.yaml
 kubectl apply -f influxdb.yaml
 kubectl apply -f grafana-deployment.yaml
 kubectl apply -f grafana-service.yaml
