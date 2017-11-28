@@ -12,3 +12,5 @@ kubectl apply -f influxdb.yaml
 kubectl apply -f grafana-deployment.yaml
 kubectl apply -f grafana-service.yaml
 kubectl create -f kubernetes-dashboard.yaml
+
+kubectl -n kube-system get services
