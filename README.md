@@ -7,6 +7,7 @@ Install Kubernates Dashboard
 
 `./kubernetes-dashboard.sh`
 
+Консоль будет доступна на люьой из нод по порту указанному в
 
 Remove Kubernates Dashboard
 
