@@ -40,12 +40,13 @@ delete NFS data
 ---
 ## Change Velum admin password
 `# in a containerized env
+
 docker exec -it $(docker ps -a | grep velum-dashboard | awk '{print $1}') entrypoint.sh bundle exec rails c
 u=User.where(:email => 'USER@EXAMPLE-MAIL.ORG').first
 u.password='userpassword'
 u.password_confirmation='userpassword'
 u.save`
-
+---
 
 Полезные команды
 
