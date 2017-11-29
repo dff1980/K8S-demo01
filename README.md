@@ -1,5 +1,9 @@
 # SuSE CaaSP K8S demo
 
+
+## cAdvisor
+`http://{Worker Node}:4194`
+
 ## Install Kubernates Dashboard
 
 `cd dashboard`
@@ -17,7 +21,6 @@
 `cd dashboard`
 
 `./clean_up.sh`
-
 
 ## Install Wordpress Demo (NFS)
 Порт [mysql-wordpress persistent volume](https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/)
