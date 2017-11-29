@@ -1,7 +1,6 @@
-# K8S-demo01
-SuSE CaaSP K8S demo
+# SuSE CaaSP K8S demo
 
-Install Kubernates Dashboard
+##Install Kubernates Dashboard
 
 `cd dashboard`
 
@@ -13,14 +12,14 @@ Install Kubernates Dashboard
 
 `kubectl -n kube-system get services`
 
-Remove Kubernates Dashboard
+##Remove Kubernates Dashboard
 
 `cd dashboard`
 
 `./clean_up.sh`
 
 
-Install Wordpress Demo (NFS)
+##Install Wordpress Demo (NFS)
 Порт [mysql-wordpress persistent volume](https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/)
 
 Нужно поправить файл: `persistentvolume.yaml`
@@ -30,7 +29,7 @@ Install Wordpress Demo (NFS)
 
 `./wordpress-nfs.sh`
 
-Remove Wordpress Demo
+##Remove Wordpress Demo
 
 `cd wordpress`
 
