@@ -8,21 +8,21 @@ spec:
   accessModes:
   - ReadWriteOnce #Though this appears to be related to controlling access to the volume, it is actually used similarly to labels and used to match a PVC to a PV. Currently, no access rules are enforced based on the accessModes.
   nfs: #The volume type being used, in this case the nfs plug-in.
-    path: /pv/1 #The path that is exported by the NFS server.
+    path: /pv/mysql-pv #The path that is exported by the NFS server.
     server: 192.168.13.1 #The host name or IP address of the NFS server.
   persistentVolumeReclaimPolicy: Recycle #The reclaim policy for the PV. This defines what happens to a volume when released from its claim. Valid options are Retain (default) and Recycle. See Reclaiming Resources.
 ---
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: wordpress-pv 
+  name: wordpress-pv
 spec:
   capacity:
     storage: 20Gi 
   accessModes:
   - ReadWriteOnce 
   nfs: 
-    path: /pv/2
+    path: /pv/wordpress-pv
     server: 192.168.13.1 
   persistentVolumeReclaimPolicy: Recycle
   
