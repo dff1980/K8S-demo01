@@ -42,7 +42,8 @@ delete NFS data
 
 ---
 ## Change Velum admin password
-# in a containerized env
+
+in a containerized env
 
 `docker exec -it $(docker ps -a | grep velum-dashboard | awk '{print $1}') entrypoint.sh bundle exec rails c
 u=User.where(:email => 'USER@EXAMPLE-MAIL.ORG').first
@@ -99,6 +100,15 @@ u.save`
 
 `kubectl -n kube-system edit service kubernetes-dashboard`
 
+`kubectl --namespace=kube-system logs kube-dns-1144198277-0khzf`
+
+`kubectl --namespace=kube-system get pod dex-3532614258-6rkfz -o yaml > /root/dex-3532614258-6rkfz.yaml`
+
+`zypper ar https://download.opensuse.org/repositories/devel:/CaaSP:/2.0:/ControllerNode/SLE_12_SP3/devel:CaaSP:2.0:ControllerNode.repo`
+ 
+`zypper se -s kubernetes-client`
+ 
+`zypper in kubernetes-client`
 
 `git clone`							Автоматически настраивает вашу локальную ветку master на отслеживание удалённой ветки master на сервере
 
