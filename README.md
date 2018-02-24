@@ -50,6 +50,7 @@ u=User.where(:email => 'USER@EXAMPLE-MAIL.ORG').first
 u.password='userpassword'
 u.password_confirmation='userpassword'
 u.save`
+
 ---
 
 Полезные команды
