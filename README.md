@@ -105,6 +105,8 @@ u.save`
 
 `kubectl --namespace=kube-system get pod dex-3532614258-6rkfz -o yaml > /root/dex-3532614258-6rkfz.yaml`
 
+`kubectl get secret --namespace monitoring grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo`
+
 `zypper ar https://download.opensuse.org/repositories/devel:/CaaSP:/2.0:/ControllerNode/SLE_12_SP3/devel:CaaSP:2.0:ControllerNode.repo`
  
 `zypper se -s kubernetes-client`
@@ -134,6 +136,9 @@ u.save`
 [GIT Help](https://git-scm.com/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D1%83%D0%B4%D0%B0%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%BC%D0%B8-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F%D0%BC%D0%B8)
 
 [GIT Help 2](https://eax.me/git-commands/)
+
+
+
 
 # Install CaaS
 
